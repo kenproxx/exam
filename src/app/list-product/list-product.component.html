@@ -1,0 +1,4 @@
+<div *ngFor="let product of list">
+  {{product.name}}, {{product.price}}, {{product.category.name}}, <a routerLink="update-product/{{product.id}}">Sửa</a> | <a
+  routerLink="delete/{{product.id}}">Xóa</a>
+</div>
